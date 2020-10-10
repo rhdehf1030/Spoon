@@ -1,34 +1,35 @@
 # Spoon Radio 과제
 
-## File Structure
+### 메인 & 공통사항
 
-0.  메인 & 공통사항
+1. main: 각 모듈 호출 및 연계
+2. 각 폴더의 variables: 변수 저장용
+3. 각 폴더의 output: 모듈 결괏값 출력
 
--   main: 각 모듈 호출 및 연계
--   각 폴더의 variables: 변수 저장용
--   각 폴더의 output: 모듈 결괏값 출력
+### Networking
 
-1.  Networking
+VPC/라우팅/Internet Gateway 등 관리
 
--   createVPC: VPC 생성
--   createSubnet: 서브넷 생성
--   createRouterTable: 라우팅 테이블 생성
--   associationRouterTable: 라우팅 테이블과 서브넷 연결
--   createInternetGateway: 인터넷 게이트웨이 생성
--   setInternetGateway: 인터넷 게이트웨이와 라우팅 테이블 연결
+1. createVPC: VPC 생성
+2. createSubnet: Subnet 생성
+3. createRouterTable: Routing Table 생성
+4. associationRouterTable: Routing Table Subnet 연결
+5. createInternetGateway: Internet Gateway 생성
+6. setInternetGateway: Internet Gateway와 Routing Table 연결
+7. createNATGateway: NAT Gateway 생성
 
-2.  Security Group
+### Security Group
 
--   createSecurityGroup: 보안그룹 생성
--   createSecurityRule: 보안규칙 생성
+1. createSecurityGroup: Security Group 생성
+2. createSecurityRule: Security Rule 생성
 
-3.  ALB
+### ALB
 
--   createALB: Application Load Balancer 생성
--   createTarget: 타겟 그룹 생성
--   createALBListener: ALB Listener 생성
+1. createALB: Application Load Balancer 생성
+2. createTarget: Target Group 생성
+3. createALBListener: ALB Listener 생성
 
-4.  LEMP
+### LEMP
 
--   createInstance: Instance 생성
--   settings: Instance 초기 실행 시 실행용 스크립트 저장
+1. createInstance: Instance 생성
+2. settings directory: Instance 초기 실행 시 실행용 스크립트 저장
