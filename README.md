@@ -1,4 +1,6 @@
-# Spoon Radio 과제
+# Terraform AWS 구성
+
+![image](https://user-images.githubusercontent.com/17924995/96085016-1c575e00-0efb-11eb-9f7f-2a1caa343159.png)
 
 ### 메인 & 공통사항
 
